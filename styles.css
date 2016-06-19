@@ -1,0 +1,256 @@
+@font-face {
+font-family: 'Nexa Light';
+font-style: normal;
+font-weight: normal;
+src: local('Nexa Light Regular'), url('nexa-light-webfont.woff') format('woff');
+}
+@font-face {
+	font-family: 'Nexa Bold';
+	src: url('./nexa-bold-webfont.eot');
+	src: local('nexa-bold-webfont'), url('./nexa-bold-webfont.woff') format('woff'), url('./nexa-bold-webfont.ttf') format('truetype');
+}
+@font-face {font-family: "Felt Tip Woman";
+    src: url("http://db.onlinewebfonts.com/t/d5c06ac68b9323f775a94c311b12bc15.eot");
+    src: url("http://db.onlinewebfonts.com/t/d5c06ac68b9323f775a94c311b12bc15.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/d5c06ac68b9323f775a94c311b12bc15.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/d5c06ac68b9323f775a94c311b12bc15.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/d5c06ac68b9323f775a94c311b12bc15.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/d5c06ac68b9323f775a94c311b12bc15.svg#Felt Tip Woman") format("svg");
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+a{
+	text-decoration: none;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	max-width:  1920px;
+	margin:auto;
+	}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	display: -ms-flex;
+	-ms-flex-wrap: wrap;
+	max-width: 82%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main-header{
+	background: url(images/bg_1.png);
+}
+.menu{
+	position: fixed;
+	text-align: center;
+	top: 0;
+	left: 1%;
+	z-index: 1000;
+	max-width: 1780px;
+	min-width: 92.7%;
+	margin: auto;
+	padding: 40px 25px;
+	border-bottom: 1px solid #ffffff;
+}
+.menu a{
+	font-size: 24px;
+	font-family: 'Nexa Light';
+	color: #e7e7e8;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.logo img{
+	display: block;
+	margin-top: 140px;
+	max-width: 480px;
+	max-height: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	padding-top: 25px;
+}
+.title{
+	font-family: 'Nexa Bold';
+	font-size: 60px;
+	text-align: center;
+	color: #f1f1f1;
+}
+.title span{
+	font-family: 'Nexa Light';
+	font-weight: normal;
+}
+
+.scrolling{
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+.scroll-text{
+	display: block;
+	font-family: 'Nexa Bold';
+	font-size: 18px;
+	text-align: center;
+	color: #f1f1f1;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 120px;
+}
+.scroll-btn{
+	display: block;
+	margin: auto;
+	padding-bottom: 35px;
+	width: 35px;
+	height: 35px;
+	background: url(images/spritesheet.png) no-repeat -5px -5px;
+}
+section.about-me{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 82%;
+	margin: auto;
+	justify-content: space-between;
+	align-content: center;
+	padding-top: 130px;
+}
+.author-photo-block{
+	max-width: 49%;
+	max-height: 50%;
+}
+img.author-photo{
+	max-width: 100%;
+	max-height: 100%;
+}
+.about-me-text-block{
+	display: flex;
+	flex-direction: column;
+	max-width: 48%;
+}
+.about-me-text-block h2{
+	font-size: 60px;
+	font-family: 'Nexa Light';
+	margin-bottom: 75px;
+}
+.about-me-text-block p{
+	font-family: 'Open Sans';
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+.about-me-text-block cite{
+	font-family: 'Felt Tip Woman';
+	font-size: 36px;
+}
+.about-me .scroll-text{
+	color: #b1b1b1;
+}
+.about-me .scroll-btn{
+	background: url(images/spritesheet.png) no-repeat -50px -5px;
+}
+section.portfolio{
+	display: flex;
+	max-width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	padding-top: 130px;
+	background: url(images/bg_2.png);
+}
+.portfolio h2{
+	font-family: 'Nexa Light';
+	font-size: 60px;
+	color: #f1f1f1;
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 90px;
+	letter-spacing: 0.1em;
+}
+a.flipLightBox{
+	margin: auto;
+}
+.photo-block{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.photo-block:first-of-type{
+	margin-bottom: 50px;
+}
+.portfolio .portfolio-photo{
+	max-width: 80%;
+	min-width: 80%;
+	margin: auto;
+}
+.portfolio .container{
+	flex-direction: column;
+}
+section.contacts{
+	text-align: center;
+	padding-top: 300px;
+}
+section.contacts .container{
+	flex-direction: column;
+}
+.contacts .mail, .phone, .social-links {
+	font-family: 'Nexa Bold';
+	font-size: 30px;
+}
+.contacts .mail span{
+	display: block;
+	font-family: 'Nexa Light';
+	font-size: 60px;
+	margin-top: 45px;
+	margin-bottom: 65px;
+}
+.contacts .phone span{
+	display: block;
+	font-family: 'Nexa Light';
+	font-size: 48px;
+	margin-bottom: 65px;
+	margin-top: 45px;
+}
+.contacts li{
+	list-style: none;
+}
+ul{
+	display: flex;
+	flex-direction: row;
+	width: 280px;
+	margin: auto;
+	justify-content: space-around;
+	margin-bottom: 200px;
+}
+.social{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-top: 35px;
+	background: url(images/spritesheet.png) no-repeat;
+}
+.social-fb{
+	background-position:  -232px -8px; 
+}
+.social-tw{
+	background-position:  -98px -8px; 
+}
+.social-inst{
+	background-position:  -165px -8px; 
+}
+footer{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	margin: auto;
+	width: 92.7%;
+	border-top: 1px solid #bebebe;
+}
+
+footer span{
+	font-family: 'Nexa Light';
+	font-size: 18px;
+}
